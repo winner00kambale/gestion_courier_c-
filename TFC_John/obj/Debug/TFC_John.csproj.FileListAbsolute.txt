@@ -1,0 +1,14 @@
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\bin\Debug\TFC_John.exe.config
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\bin\Debug\TFC_John.exe
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\bin\Debug\TFC_John.pdb
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.csprojResolveAssemblyReference.cache
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.Form1.resources
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.Properties.Resources.resources
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.csproj.GenerateResource.Cache
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.exe
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.pdb
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\bin\Debug\Guna.UI2.dll
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.UserControls.Frm_Client.resources
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.UserControls.Frm_agent.resources
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\bin\Debug\Bunifu_UI_v1.52.dll
+E:\Mes documents\Mes projets\C#\TFC_John\TFC_John\obj\Debug\TFC_John.UserControls.Frm_expedition.resources
