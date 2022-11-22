@@ -31,6 +31,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.principal = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.button4 = new System.Windows.Forms.Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newAgenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.typeCourrierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,12 +45,6 @@
             this.paramsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilisateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button4 = new System.Windows.Forms.Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -84,68 +84,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1342, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newAgenceToolStripMenuItem,
-            this.typeCourrierToolStripMenuItem,
-            this.moyenTransportToolStripMenuItem});
-            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
-            this.menuToolStripMenuItem.Text = "Menu";
-            // 
-            // newAgenceToolStripMenuItem
-            // 
-            this.newAgenceToolStripMenuItem.Name = "newAgenceToolStripMenuItem";
-            this.newAgenceToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
-            this.newAgenceToolStripMenuItem.Text = "New Agence";
-            this.newAgenceToolStripMenuItem.Click += new System.EventHandler(this.newAgenceToolStripMenuItem_Click);
-            // 
-            // typeCourrierToolStripMenuItem
-            // 
-            this.typeCourrierToolStripMenuItem.Name = "typeCourrierToolStripMenuItem";
-            this.typeCourrierToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
-            this.typeCourrierToolStripMenuItem.Text = "Type Courrier";
-            this.typeCourrierToolStripMenuItem.Click += new System.EventHandler(this.typeCourrierToolStripMenuItem_Click);
-            // 
-            // moyenTransportToolStripMenuItem
-            // 
-            this.moyenTransportToolStripMenuItem.Name = "moyenTransportToolStripMenuItem";
-            this.moyenTransportToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
-            this.moyenTransportToolStripMenuItem.Text = "Moyen Transport";
-            this.moyenTransportToolStripMenuItem.Click += new System.EventHandler(this.moyenTransportToolStripMenuItem_Click);
-            // 
-            // fichierToolStripMenuItem
-            // 
-            this.fichierToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
-            this.fichierToolStripMenuItem.Text = "Fichier";
-            // 
-            // paramsToolStripMenuItem
-            // 
-            this.paramsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dconnexionToolStripMenuItem,
-            this.utilisateursToolStripMenuItem});
-            this.paramsToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paramsToolStripMenuItem.Name = "paramsToolStripMenuItem";
-            this.paramsToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
-            this.paramsToolStripMenuItem.Text = "Params";
-            // 
-            // dconnexionToolStripMenuItem
-            // 
-            this.dconnexionToolStripMenuItem.Name = "dconnexionToolStripMenuItem";
-            this.dconnexionToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
-            this.dconnexionToolStripMenuItem.Text = "Deconnexion";
-            this.dconnexionToolStripMenuItem.Click += new System.EventHandler(this.dconnexionToolStripMenuItem_Click);
-            // 
-            // utilisateursToolStripMenuItem
-            // 
-            this.utilisateursToolStripMenuItem.Name = "utilisateursToolStripMenuItem";
-            this.utilisateursToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
-            this.utilisateursToolStripMenuItem.Text = "Utilisateurs";
             // 
             // button4
             // 
@@ -241,6 +179,75 @@
             this.button1.Text = "Reception";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newAgenceToolStripMenuItem,
+            this.typeCourrierToolStripMenuItem,
+            this.moyenTransportToolStripMenuItem});
+            this.menuToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuToolStripMenuItem.Image = global::TFC_John.Properties.Resources.icons8_menu_squared_32;
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // newAgenceToolStripMenuItem
+            // 
+            this.newAgenceToolStripMenuItem.Image = global::TFC_John.Properties.Resources.icons8_new1_32;
+            this.newAgenceToolStripMenuItem.Name = "newAgenceToolStripMenuItem";
+            this.newAgenceToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.newAgenceToolStripMenuItem.Text = "New Agence";
+            this.newAgenceToolStripMenuItem.Click += new System.EventHandler(this.newAgenceToolStripMenuItem_Click);
+            // 
+            // typeCourrierToolStripMenuItem
+            // 
+            this.typeCourrierToolStripMenuItem.Image = global::TFC_John.Properties.Resources.icons8_shopping_cart_322;
+            this.typeCourrierToolStripMenuItem.Name = "typeCourrierToolStripMenuItem";
+            this.typeCourrierToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.typeCourrierToolStripMenuItem.Text = "Type Courrier";
+            this.typeCourrierToolStripMenuItem.Click += new System.EventHandler(this.typeCourrierToolStripMenuItem_Click);
+            // 
+            // moyenTransportToolStripMenuItem
+            // 
+            this.moyenTransportToolStripMenuItem.Image = global::TFC_John.Properties.Resources.icons8_car_32;
+            this.moyenTransportToolStripMenuItem.Name = "moyenTransportToolStripMenuItem";
+            this.moyenTransportToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.moyenTransportToolStripMenuItem.Text = "Moyen Transport";
+            this.moyenTransportToolStripMenuItem.Click += new System.EventHandler(this.moyenTransportToolStripMenuItem_Click);
+            // 
+            // fichierToolStripMenuItem
+            // 
+            this.fichierToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fichierToolStripMenuItem.Image = global::TFC_John.Properties.Resources.icons8_file_submodule_32;
+            this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.fichierToolStripMenuItem.Text = "Fichier";
+            // 
+            // paramsToolStripMenuItem
+            // 
+            this.paramsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dconnexionToolStripMenuItem,
+            this.utilisateursToolStripMenuItem});
+            this.paramsToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paramsToolStripMenuItem.Image = global::TFC_John.Properties.Resources.icons8_settings_32;
+            this.paramsToolStripMenuItem.Name = "paramsToolStripMenuItem";
+            this.paramsToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.paramsToolStripMenuItem.Text = "Params";
+            // 
+            // dconnexionToolStripMenuItem
+            // 
+            this.dconnexionToolStripMenuItem.Image = global::TFC_John.Properties.Resources.icons8_logout_rounded_left_32;
+            this.dconnexionToolStripMenuItem.Name = "dconnexionToolStripMenuItem";
+            this.dconnexionToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.dconnexionToolStripMenuItem.Text = "Deconnexion";
+            this.dconnexionToolStripMenuItem.Click += new System.EventHandler(this.dconnexionToolStripMenuItem_Click);
+            // 
+            // utilisateursToolStripMenuItem
+            // 
+            this.utilisateursToolStripMenuItem.Name = "utilisateursToolStripMenuItem";
+            this.utilisateursToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
+            this.utilisateursToolStripMenuItem.Text = "Utilisateurs";
             // 
             // Form1
             // 

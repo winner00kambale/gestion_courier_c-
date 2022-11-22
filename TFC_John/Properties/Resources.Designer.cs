@@ -83,9 +83,39 @@ namespace TFC_John.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_car_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_car_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_file_submodule_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_file_submodule_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_home_address_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_home_address_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_rounded_left_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_logout_rounded_left_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +133,29 @@ namespace TFC_John.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_squared_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_menu_squared_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_money_bag_rupee_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_money_bag_rupee_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_new1_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_new1_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +173,29 @@ namespace TFC_John.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_settings_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_settings_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_shopping_cart_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_shopping_cart_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_shopping_cart_322 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_shopping_cart_322", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
