@@ -118,13 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="avtar-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\avtar-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="undraw_Add_files_re_v09g" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\undraw_Add_files_re_v09g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NewEmployee_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\NewEmployee_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undraw_Add_files_re_v09g" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\undraw_Add_files_re_v09g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="avtar-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\avtar-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undraw_Design_objectives_re_94pd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\undraw_Design_objectives_re_94pd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

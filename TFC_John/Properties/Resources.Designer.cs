@@ -89,5 +89,15 @@ namespace TFC_John.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_Design_objectives_re_94pd {
+            get {
+                object obj = ResourceManager.GetObject("undraw_Design_objectives_re_94pd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

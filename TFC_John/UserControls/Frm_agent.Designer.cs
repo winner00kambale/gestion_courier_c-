@@ -58,12 +58,15 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -496,11 +499,24 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Appearance.BackColor = System.Drawing.Color.White;
+            this.groupControl1.Appearance.Options.UseBackColor = true;
+            this.groupControl1.Controls.Add(this.guna2PictureBox1);
             this.groupControl1.Location = new System.Drawing.Point(742, 30);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(357, 251);
+            this.groupControl1.Size = new System.Drawing.Size(376, 251);
             this.groupControl1.TabIndex = 7;
-            this.groupControl1.Text = "groupControl1";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::TFC_John.Properties.Resources.undraw_Design_objectives_re_94pd;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(2, 23);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(371, 225);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // Frm_agent
             // 
@@ -523,6 +539,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -559,5 +577,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private Guna.UI2.WinForms.Guna2ComboBox agence;
         private System.Windows.Forms.Label id;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

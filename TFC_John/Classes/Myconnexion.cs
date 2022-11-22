@@ -259,77 +259,35 @@ namespace TFC_John.Classes
             con.Close();
         }
 
-        public void SCAN_PLACE(String MATRICULE, Label message, Label matricule, Label nom, Label postnom, Label prenom, GroupBox batiment, Label salle, Label ranger, Label ligne, Label promotion, Label cours, PictureBox good, PictureBox bad, PictureBox ok)
+        public void EXPEDITION(String proc, string parametre)
         {
-            message.Text = "";
+            
             con.Open();
             try
             {
-                Console.WriteLine("EXEC SCAN_EXAMEN '" + MATRICULE + "'");
-                cmd.CommandText = "EXEC SCAN_EXAMEN '" + MATRICULE + "'";
+               
+                cmd.CommandText = "EXEC " + proc + " " + parametre;
+                
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    if (int.Parse(dr[0].ToString()) == 2)
+                    if (int.Parse(dr[0].ToString()) == 1)
                     {
-                        Console.WriteLine("EXEC SCAN_EXAMEN '" + MATRICULE + "'");
-                        message.Text = "STOP ! Vous n'avez pas d'examen en " + dr[1].ToString();
-                        bad.Visible = true;
-                        good.Visible = false;
-                        matricule.Text = "";
-                        nom.Text = "";
-                        postnom.Text = "";
-                        prenom.Text = "";
-                        batiment.Text = "";
-                        salle.Text = "";
-                        ranger.Text = "";
-                        ligne.Text = "";
-                        promotion.Text = dr[1].ToString();
-                        cours.Text = "";
-                        ok.Visible = false;
+                        
+                        MessageBox.Show("cette expedition a deja ete effectuee");
 
                     }
-                    else if (int.Parse(dr[0].ToString()) == 1)
+                    else if (int.Parse(dr[0].ToString()) == 2)
                     {
-                        bad.Visible = false;
-                        good.Visible = true;
-                        ok.Visible = true;
-                        promotion.Text = dr[8].ToString();
-                        cours.Text = dr[9].ToString();
-                        message.Text = "Affecter dans la salle !";
-                        nom.Text = dr[2].ToString();
-                        postnom.Text = dr[3].ToString();
-                        prenom.Text = dr[4].ToString();
-                        matricule.Text = dr[1].ToString();
-                        batiment.Text = dr[5].ToString();
-                        salle.Text = dr[10].ToString();
-                        ranger.Text = dr[6].ToString();
-                        ligne.Text = dr[7].ToString();
-
-                        //salle.Visible = false;
-                        //ranger.Visible = false;
-                        //ligne.Visible = false;
+                        MessageBox.Show("Modification avec succes");
+                        
                     }
-                    else if (int.Parse(dr[0].ToString()) == 501)
+                    else if (int.Parse(dr[0].ToString()) == 3)
                     {
-                        //salle.Visible = true;
-                        //ranger.Visible = true;
-                        //ligne.Visible = true;
-                        bad.Visible = true;
-                        good.Visible = true;
-                        ok.Visible = false;
-                        promotion.Text = dr[8].ToString();
-                        cours.Text = dr[9].ToString();
-                        message.Text = "STOP !!! T'as deja une place dans la salle " + dr[10].ToString();
-                        nom.Text = dr[2].ToString();
-                        postnom.Text = dr[3].ToString();
-                        prenom.Text = dr[4].ToString();
-                        matricule.Text = dr[1].ToString();
-                        batiment.Text = dr[5].ToString();
-                        salle.Text = dr[10].ToString();
-                        ranger.Text = dr[6].ToString();
-                        ligne.Text = dr[7].ToString();
+                        MessageBox.Show("Detail Ajouter Avec Succes");
+                       
                     }
+                   
                 }
             }
             catch (Exception ex)

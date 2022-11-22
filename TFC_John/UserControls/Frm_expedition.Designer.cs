@@ -38,12 +38,14 @@
             this.mod = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.id = new System.Windows.Forms.Label();
             this.date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.client = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.modifier = new Guna.UI2.WinForms.Guna2Button();
+            this.ajout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.moyen = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -59,6 +61,7 @@
             this.expedition = new Guna.UI2.WinForms.Guna2TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.id2 = new System.Windows.Forms.Label();
             this.agent = new Guna.UI2.WinForms.Guna2ComboBox();
             this.conditionnement = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -71,8 +74,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nom = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.id = new System.Windows.Forms.Label();
-            this.id2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.groupBox1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -182,6 +183,14 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // id
+            // 
+            this.id.AutoSize = true;
+            this.id.Location = new System.Drawing.Point(255, 11);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(0, 20);
+            this.id.TabIndex = 12;
+            // 
             // date
             // 
             this.date.CheckedState.Parent = this.date;
@@ -237,7 +246,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.guna2Button3);
+            this.groupBox3.Controls.Add(this.modifier);
+            this.groupBox3.Controls.Add(this.ajout);
             this.groupBox3.Controls.Add(this.guna2DataGridView1);
             this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.groupBox6);
@@ -249,22 +259,39 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detail Expedtion";
             // 
-            // guna2Button3
+            // modifier
             // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Century", 12F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(536, 421);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(158, 39);
-            this.guna2Button3.TabIndex = 4;
-            this.guna2Button3.Text = "Enregistrer";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.modifier.CheckedState.Parent = this.modifier;
+            this.modifier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.modifier.CustomImages.Parent = this.modifier;
+            this.modifier.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.modifier.Font = new System.Drawing.Font("Century", 12F);
+            this.modifier.ForeColor = System.Drawing.Color.White;
+            this.modifier.HoverState.Parent = this.modifier;
+            this.modifier.Location = new System.Drawing.Point(535, 421);
+            this.modifier.Name = "modifier";
+            this.modifier.ShadowDecoration.Parent = this.modifier;
+            this.modifier.Size = new System.Drawing.Size(158, 39);
+            this.modifier.TabIndex = 5;
+            this.modifier.Text = "Modifier";
+            this.modifier.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // ajout
+            // 
+            this.ajout.CheckedState.Parent = this.ajout;
+            this.ajout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ajout.CustomImages.Parent = this.ajout;
+            this.ajout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ajout.Font = new System.Drawing.Font("Century", 12F);
+            this.ajout.ForeColor = System.Drawing.Color.White;
+            this.ajout.HoverState.Parent = this.ajout;
+            this.ajout.Location = new System.Drawing.Point(353, 421);
+            this.ajout.Name = "ajout";
+            this.ajout.ShadowDecoration.Parent = this.ajout;
+            this.ajout.Size = new System.Drawing.Size(158, 39);
+            this.ajout.TabIndex = 4;
+            this.ajout.Text = "Enregistrer";
+            this.ajout.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2DataGridView1
             // 
@@ -322,6 +349,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // groupBox5
             // 
@@ -551,6 +579,14 @@
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             // 
+            // id2
+            // 
+            this.id2.AutoSize = true;
+            this.id2.Location = new System.Drawing.Point(186, 15);
+            this.id2.Name = "id2";
+            this.id2.Size = new System.Drawing.Size(0, 20);
+            this.id2.TabIndex = 17;
+            // 
             // agent
             // 
             this.agent.BackColor = System.Drawing.Color.Transparent;
@@ -590,7 +626,7 @@
             this.conditionnement.PlaceholderText = "";
             this.conditionnement.SelectedText = "";
             this.conditionnement.ShadowDecoration.Parent = this.conditionnement;
-            this.conditionnement.Size = new System.Drawing.Size(319, 36);
+            this.conditionnement.Size = new System.Drawing.Size(320, 36);
             this.conditionnement.TabIndex = 14;
             // 
             // label7
@@ -631,7 +667,7 @@
             this.mail.PlaceholderText = "";
             this.mail.SelectedText = "";
             this.mail.ShadowDecoration.Parent = this.mail;
-            this.mail.Size = new System.Drawing.Size(320, 36);
+            this.mail.Size = new System.Drawing.Size(321, 36);
             this.mail.TabIndex = 10;
             // 
             // label5
@@ -663,7 +699,7 @@
             this.contact.PlaceholderText = "";
             this.contact.SelectedText = "";
             this.contact.ShadowDecoration.Parent = this.contact;
-            this.contact.Size = new System.Drawing.Size(321, 36);
+            this.contact.Size = new System.Drawing.Size(322, 36);
             this.contact.TabIndex = 8;
             // 
             // label4
@@ -695,7 +731,7 @@
             this.adresse.PlaceholderText = "";
             this.adresse.SelectedText = "";
             this.adresse.ShadowDecoration.Parent = this.adresse;
-            this.adresse.Size = new System.Drawing.Size(322, 36);
+            this.adresse.Size = new System.Drawing.Size(323, 36);
             this.adresse.TabIndex = 6;
             // 
             // label3
@@ -727,7 +763,7 @@
             this.nom.PlaceholderText = "";
             this.nom.SelectedText = "";
             this.nom.ShadowDecoration.Parent = this.nom;
-            this.nom.Size = new System.Drawing.Size(323, 36);
+            this.nom.Size = new System.Drawing.Size(324, 36);
             this.nom.TabIndex = 4;
             // 
             // label2
@@ -738,22 +774,6 @@
             this.label2.Size = new System.Drawing.Size(147, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Noms Destinataire";
-            // 
-            // id
-            // 
-            this.id.AutoSize = true;
-            this.id.Location = new System.Drawing.Point(255, 11);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(0, 20);
-            this.id.TabIndex = 12;
-            // 
-            // id2
-            // 
-            this.id2.AutoSize = true;
-            this.id2.Location = new System.Drawing.Point(186, 15);
-            this.id2.Name = "id2";
-            this.id2.Size = new System.Drawing.Size(0, 20);
-            this.id2.TabIndex = 17;
             // 
             // guna2PictureBox1
             // 
@@ -835,9 +855,10 @@
         private Guna.UI2.WinForms.Guna2ComboBox agent;
         private Guna.UI2.WinForms.Guna2ComboBox moyen;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button ajout;
         private System.Windows.Forms.Label id;
         private System.Windows.Forms.Label id2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button modifier;
     }
 }
