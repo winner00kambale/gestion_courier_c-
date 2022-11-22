@@ -52,5 +52,10 @@ namespace TFC_John
         {
             new Boxes.Frm_type_courrier().ShowDialog();
         }
+
+        private void moyenTransportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Boxes.Frm_Moyen_Transport().ShowDialog();
+        }
     }
 }

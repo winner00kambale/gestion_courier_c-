@@ -68,6 +68,12 @@
     <Compile Include="Boxes\Frm_agence.Designer.cs">
       <DependentUpon>Frm_agence.cs</DependentUpon>
     </Compile>
+    <Compile Include="Boxes\Frm_Moyen_Transport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxes\Frm_Moyen_Transport.Designer.cs">
+      <DependentUpon>Frm_Moyen_Transport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Boxes\Frm_type_courrier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="Boxes\Frm_agence.resx">
       <DependentUpon>Frm_agence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxes\Frm_Moyen_Transport.resx">
+      <DependentUpon>Frm_Moyen_Transport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Boxes\Frm_type_courrier.resx">
       <DependentUpon>Frm_type_courrier.cs</DependentUpon>

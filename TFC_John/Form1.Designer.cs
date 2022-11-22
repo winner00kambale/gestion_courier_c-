@@ -39,10 +39,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newAgenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.typeCourrierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paramsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.typeCourrierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moyenTransportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -171,7 +172,8 @@
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newAgenceToolStripMenuItem,
-            this.typeCourrierToolStripMenuItem});
+            this.typeCourrierToolStripMenuItem,
+            this.moyenTransportToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
@@ -180,9 +182,16 @@
             // newAgenceToolStripMenuItem
             // 
             this.newAgenceToolStripMenuItem.Name = "newAgenceToolStripMenuItem";
-            this.newAgenceToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
+            this.newAgenceToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.newAgenceToolStripMenuItem.Text = "New Agence";
             this.newAgenceToolStripMenuItem.Click += new System.EventHandler(this.newAgenceToolStripMenuItem_Click);
+            // 
+            // typeCourrierToolStripMenuItem
+            // 
+            this.typeCourrierToolStripMenuItem.Name = "typeCourrierToolStripMenuItem";
+            this.typeCourrierToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.typeCourrierToolStripMenuItem.Text = "Type Courrier";
+            this.typeCourrierToolStripMenuItem.Click += new System.EventHandler(this.typeCourrierToolStripMenuItem_Click);
             // 
             // fichierToolStripMenuItem
             // 
@@ -207,12 +216,12 @@
             this.dconnexionToolStripMenuItem.Text = "Deconnexion";
             this.dconnexionToolStripMenuItem.Click += new System.EventHandler(this.dconnexionToolStripMenuItem_Click);
             // 
-            // typeCourrierToolStripMenuItem
+            // moyenTransportToolStripMenuItem
             // 
-            this.typeCourrierToolStripMenuItem.Name = "typeCourrierToolStripMenuItem";
-            this.typeCourrierToolStripMenuItem.Size = new System.Drawing.Size(183, 24);
-            this.typeCourrierToolStripMenuItem.Text = "Type Courrier";
-            this.typeCourrierToolStripMenuItem.Click += new System.EventHandler(this.typeCourrierToolStripMenuItem_Click);
+            this.moyenTransportToolStripMenuItem.Name = "moyenTransportToolStripMenuItem";
+            this.moyenTransportToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.moyenTransportToolStripMenuItem.Text = "Moyen Transport";
+            this.moyenTransportToolStripMenuItem.Click += new System.EventHandler(this.moyenTransportToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -256,6 +265,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.ToolStripMenuItem newAgenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem typeCourrierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moyenTransportToolStripMenuItem;
     }
 }
 
