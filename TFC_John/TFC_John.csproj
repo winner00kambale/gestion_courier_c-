@@ -68,6 +68,12 @@
     <Compile Include="Boxes\Frm_agence.Designer.cs">
       <DependentUpon>Frm_agence.cs</DependentUpon>
     </Compile>
+    <Compile Include="Boxes\Frm_type_courrier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxes\Frm_type_courrier.Designer.cs">
+      <DependentUpon>Frm_type_courrier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Appel.cs" />
     <Compile Include="Classes\Myconnexion.cs" />
     <Compile Include="Form1.cs">
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="Boxes\Frm_agence.resx">
       <DependentUpon>Frm_agence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boxes\Frm_type_courrier.resx">
+      <DependentUpon>Frm_type_courrier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

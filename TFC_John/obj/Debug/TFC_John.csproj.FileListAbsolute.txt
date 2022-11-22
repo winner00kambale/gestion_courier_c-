@@ -27,3 +27,4 @@ E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.U
 E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.UserControls.Frm_expedition.resources
 E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.csproj.GenerateResource.Cache
 E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.Boxes.Frm_agence.resources
+E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.Boxes.Frm_type_courrier.resources

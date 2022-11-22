@@ -47,5 +47,10 @@ namespace TFC_John
         {
             new Boxes.Frm_agence().ShowDialog();
         }
+
+        private void typeCourrierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Boxes.Frm_type_courrier().ShowDialog();
+        }
     }
 }
