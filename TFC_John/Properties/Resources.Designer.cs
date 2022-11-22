@@ -213,6 +213,16 @@ namespace TFC_John.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_4040 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_4040", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NewEmployee_32x32 {
             get {
                 object obj = ResourceManager.GetObject("NewEmployee_32x32", resourceCulture);

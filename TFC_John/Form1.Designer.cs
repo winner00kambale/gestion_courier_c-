@@ -94,7 +94,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::TFC_John.Properties.Resources.icons8_home_address_32;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 124);
+            this.button4.Location = new System.Drawing.Point(0, 220);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(206, 49);
             this.button4.TabIndex = 7;
@@ -104,7 +104,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::TFC_John.Properties.Resources.avtar_2;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 498);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(200, 195);
@@ -121,7 +121,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::TFC_John.Properties.Resources.icons8_male_user_32;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 344);
+            this.button5.Location = new System.Drawing.Point(0, 440);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(206, 49);
             this.button5.TabIndex = 5;
@@ -138,7 +138,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::TFC_John.Properties.Resources.icons8_money_bag_rupee_32;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 289);
+            this.button3.Location = new System.Drawing.Point(0, 385);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(206, 49);
             this.button3.TabIndex = 3;
@@ -155,7 +155,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::TFC_John.Properties.Resources.icons8_shopping_cart_32;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 234);
+            this.button2.Location = new System.Drawing.Point(0, 330);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(206, 49);
             this.button2.TabIndex = 2;
@@ -172,7 +172,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::TFC_John.Properties.Resources.icons8_add_user_group_man_man_32;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 179);
+            this.button1.Location = new System.Drawing.Point(0, 275);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(206, 49);
             this.button1.TabIndex = 1;

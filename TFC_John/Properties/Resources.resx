@@ -151,6 +151,9 @@
   <data name="avtar-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\avtar-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_logout_rounded_left_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\icons8_logout_rounded_left_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NewEmployee_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\NewEmployee_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,7 +172,7 @@
   <data name="icons8_save_as_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\icons\icons8_save_as_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_logout_rounded_left_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\icons\icons8_logout_rounded_left_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_4040" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\IMG_4040.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
