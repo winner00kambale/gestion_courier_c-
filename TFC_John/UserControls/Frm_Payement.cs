@@ -21,7 +21,8 @@ namespace TFC_John.UserControls
         private void Frm_Payement_Load(object sender, EventArgs e)
         {
             m.chargementTableau(dataGridView1,"select * from detail where id not in(select detailExpedition from Paiement)");
-            m.chargementTableau(dataGridView2, "select * from Paiement");
+            m.chargementTableau(dataGridView2, "select * from aff_payement");
+            m.chartchargement(chart1, "select datePaiement,COUNT(*) from aff_payement group by datePaiement");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -44,9 +45,15 @@ namespace TFC_John.UserControls
             else
             {
                 m.EXEC_UNIVERSEL("proc_paiement", "'" + id.Text + "','" + expe.Text + "','" + montant.Text + "','" + libelle.Text + "'", "Payement avec succes");
-                m.chargementTableau(dataGridView2, "select * from Paiement");
+                m.chargementTableau(dataGridView2, "select * from aff_payement");
+                m.chargementTableau(dataGridView1, "select * from detail where id not in(select detailExpedition from Paiement)");
             }
-           
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
