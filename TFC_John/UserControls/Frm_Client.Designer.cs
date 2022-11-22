@@ -32,6 +32,7 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.id = new System.Windows.Forms.Label();
             this.feminin = new System.Windows.Forms.RadioButton();
             this.masculin = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,11 +54,10 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.mod = new Guna.UI2.WinForms.Guna2Button();
             this.add = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.id = new System.Windows.Forms.Label();
+            this.mod = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -86,6 +86,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "IDENTITE CLIENT";
+            // 
+            // id
+            // 
+            this.id.AutoSize = true;
+            this.id.Location = new System.Drawing.Point(225, 25);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(0, 18);
+            this.id.TabIndex = 7;
             // 
             // feminin
             // 
@@ -393,28 +401,15 @@
             this.groupBox4.Text = "Actions";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
-            // mod
-            // 
-            this.mod.CheckedState.Parent = this.mod;
-            this.mod.CustomImages.Parent = this.mod;
-            this.mod.Font = new System.Drawing.Font("Century", 12F);
-            this.mod.ForeColor = System.Drawing.Color.White;
-            this.mod.HoverState.Parent = this.mod;
-            this.mod.Location = new System.Drawing.Point(194, 26);
-            this.mod.Name = "mod";
-            this.mod.ShadowDecoration.Parent = this.mod;
-            this.mod.Size = new System.Drawing.Size(137, 45);
-            this.mod.TabIndex = 1;
-            this.mod.Text = "Modifier";
-            this.mod.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
             // add
             // 
             this.add.CheckedState.Parent = this.add;
+            this.add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.add.CustomImages.Parent = this.add;
             this.add.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add.ForeColor = System.Drawing.Color.White;
             this.add.HoverState.Parent = this.add;
+            this.add.Image = global::TFC_John.Properties.Resources.icons8_save_as_32;
             this.add.Location = new System.Drawing.Point(35, 26);
             this.add.Name = "add";
             this.add.ShadowDecoration.Parent = this.add;
@@ -451,13 +446,22 @@
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
-            // id
+            // mod
             // 
-            this.id.AutoSize = true;
-            this.id.Location = new System.Drawing.Point(225, 25);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(0, 18);
-            this.id.TabIndex = 7;
+            this.mod.CheckedState.Parent = this.mod;
+            this.mod.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.mod.CustomImages.Parent = this.mod;
+            this.mod.Font = new System.Drawing.Font("Century", 12F);
+            this.mod.ForeColor = System.Drawing.Color.White;
+            this.mod.HoverState.Parent = this.mod;
+            this.mod.Image = global::TFC_John.Properties.Resources.icons8_update_32;
+            this.mod.Location = new System.Drawing.Point(194, 26);
+            this.mod.Name = "mod";
+            this.mod.ShadowDecoration.Parent = this.mod;
+            this.mod.Size = new System.Drawing.Size(137, 45);
+            this.mod.TabIndex = 1;
+            this.mod.Text = "Modifier";
+            this.mod.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // Frm_Client
             // 
