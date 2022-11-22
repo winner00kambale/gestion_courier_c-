@@ -62,6 +62,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Boxes\Frm_agence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boxes\Frm_agence.Designer.cs">
+      <DependentUpon>Frm_agence.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Appel.cs" />
     <Compile Include="Classes\Myconnexion.cs" />
     <Compile Include="Form1.cs">
@@ -90,6 +96,9 @@
     <Compile Include="UserControls\Frm_expedition.Designer.cs">
       <DependentUpon>Frm_expedition.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Boxes\Frm_agence.resx">
+      <DependentUpon>Frm_agence.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,7 +135,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Boxes\" />
     <Folder Include="WindowsForms\" />
   </ItemGroup>
   <ItemGroup>

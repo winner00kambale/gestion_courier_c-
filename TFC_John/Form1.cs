@@ -42,5 +42,10 @@ namespace TFC_John
         {
             a.APPEL_PANEL(new UserControls.Frm_expedition(), principal);
         }
+
+        private void newAgenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Boxes.Frm_agence().ShowDialog();
+        }
     }
 }

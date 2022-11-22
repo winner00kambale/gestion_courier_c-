@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -40,10 +41,10 @@
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paramsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.newAgenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,6 +60,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(206, 707);
             this.panel1.TabIndex = 0;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::TFC_John.Properties.Resources.avtar_2;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 498);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(200, 195);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 6;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // button5
             // 
@@ -156,6 +168,8 @@
             // 
             // menuToolStripMenuItem
             // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newAgenceToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
@@ -184,16 +198,12 @@
             this.dconnexionToolStripMenuItem.Text = "Deconnexion";
             this.dconnexionToolStripMenuItem.Click += new System.EventHandler(this.dconnexionToolStripMenuItem_Click);
             // 
-            // guna2PictureBox1
+            // newAgenceToolStripMenuItem
             // 
-            this.guna2PictureBox1.Image = global::TFC_John.Properties.Resources.avtar_2;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 498);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(200, 195);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 6;
-            this.guna2PictureBox1.TabStop = false;
+            this.newAgenceToolStripMenuItem.Name = "newAgenceToolStripMenuItem";
+            this.newAgenceToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
+            this.newAgenceToolStripMenuItem.Text = "New Agence";
+            this.newAgenceToolStripMenuItem.Click += new System.EventHandler(this.newAgenceToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -212,9 +222,9 @@
             this.Text = "Gestion de Courier";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,6 +245,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem newAgenceToolStripMenuItem;
     }
 }
 
