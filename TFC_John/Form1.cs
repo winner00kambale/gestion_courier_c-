@@ -57,5 +57,10 @@ namespace TFC_John
         {
             new Boxes.Frm_Moyen_Transport().ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            a.APPEL_PANEL(new UserControls.Frm_Payement(), principal);
+        }
     }
 }

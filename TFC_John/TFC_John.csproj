@@ -108,6 +108,12 @@
     <Compile Include="UserControls\Frm_expedition.Designer.cs">
       <DependentUpon>Frm_expedition.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Frm_Payement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Frm_Payement.Designer.cs">
+      <DependentUpon>Frm_Payement.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Boxes\Frm_agence.resx">
       <DependentUpon>Frm_agence.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Frm_expedition.resx">
       <DependentUpon>Frm_expedition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Frm_Payement.resx">
+      <DependentUpon>Frm_Payement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
