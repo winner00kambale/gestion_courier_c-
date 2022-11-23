@@ -62,5 +62,10 @@ namespace TFC_John
         {
             a.APPEL_PANEL(new UserControls.Frm_Payement(), principal);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            a.APPEL_PANEL(new UserControls.Frm_rapport(), principal);
+        }
     }
 }

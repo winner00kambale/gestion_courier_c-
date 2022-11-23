@@ -172,6 +172,32 @@ namespace TFC_John.Classes
                 MessageBox.Show(ex.Message);
             }
         }
+        public DataSet get_Rapport(string proc, string date)
+        {
+            DataSet dst;
+            try
+            {
+                //   innitialiseConnect();
+                if (!con.State.ToString().ToLower().Equals("open")) con.Open();
+                cmd = new SqlCommand("EXEC " + proc + " " +date, con);
+                //cmd.CommandText = "EXEC " + proc + " " + parametre;
+                //  cmd.Parameters.AddWithValue("@valchamp", valchamp);
+                dt = new SqlDataAdapter(cmd);
+                dst = new DataSet();
+                dt.Fill(dst, proc);
+                //Console.WriteLine("SELECT  " + colonnes + " FROM " + nomTable + "" + refh);
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("SELECT  " + colonnes + " FROM " + nomTable + "" + refh);
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dt.Dispose(); con.Close();
+            }
+            return dst;
+        }
         public void CHOISIR_IMAGE(PictureBox picture)
         {
 
@@ -297,5 +323,6 @@ namespace TFC_John.Classes
             con.Close();
 
         }
+
     }
 }

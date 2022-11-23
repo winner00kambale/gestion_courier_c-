@@ -122,6 +122,12 @@
     <Compile Include="sorties\Liste_cleints.Designer.cs">
       <DependentUpon>Liste_cleints.cs</DependentUpon>
     </Compile>
+    <Compile Include="sorties\rapport_journalier_expedition.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\rapport_journalier_expedition.Designer.cs">
+      <DependentUpon>rapport_journalier_expedition.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Frm_agent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +151,12 @@
     </Compile>
     <Compile Include="UserControls\Frm_Payement.Designer.cs">
       <DependentUpon>Frm_Payement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Frm_rapport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Frm_rapport.Designer.cs">
+      <DependentUpon>Frm_rapport.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Boxes\Frm_agence.resx">
       <DependentUpon>Frm_agence.cs</DependentUpon>
@@ -175,6 +187,9 @@
     <EmbeddedResource Include="sorties\Liste_cleints.resx">
       <DependentUpon>Liste_cleints.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sorties\rapport_journalier_expedition.resx">
+      <DependentUpon>rapport_journalier_expedition.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Frm_agent.resx">
       <DependentUpon>Frm_agent.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Frm_Payement.resx">
       <DependentUpon>Frm_Payement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Frm_rapport.resx">
+      <DependentUpon>Frm_rapport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
