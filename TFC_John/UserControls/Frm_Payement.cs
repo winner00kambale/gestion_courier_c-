@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraReports.UI;
 
 namespace TFC_John.UserControls
 {
@@ -16,6 +17,7 @@ namespace TFC_John.UserControls
         public Frm_Payement()
         {
             InitializeComponent();
+            print.Enabled = false;
         }
 
         private void Frm_Payement_Load(object sender, EventArgs e)
@@ -54,6 +56,30 @@ namespace TFC_John.UserControls
         private void chart1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            if (id.Text.Equals(""))
+            {
+                MessageBox.Show("veillez d'abord selectionner");
+            }
+            else
+            {
+                sorties.facture c = new sorties.facture();
+                c.DataSource = m.get_Report_Z("*", " facture", " where id =" + id.Text + "");
+                using (ReportPrintTool printTool = new ReportPrintTool(c))
+                {
+                    printTool.ShowPreviewDialog();
+                }
+                print.Enabled = false;
+            }
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+            print.Enabled = true;
         }
     }
 }

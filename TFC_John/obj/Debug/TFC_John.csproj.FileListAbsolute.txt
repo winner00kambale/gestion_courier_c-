@@ -36,3 +36,4 @@ E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.s
 E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.UserControls.Frm_rapport.resources
 E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.exe.licenses
 E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.sorties.rapport_payement.resources
+E:\Mes documents\Mes projets\C#\gestion_courier_c-\TFC_John\obj\Debug\TFC_John.sorties.facture.resources

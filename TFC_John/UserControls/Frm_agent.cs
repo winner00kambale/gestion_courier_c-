@@ -57,7 +57,7 @@ namespace TFC_John.UserControls
              }
              else
              {
-                 m.EXEC_UNIVERSEL("proc_agent", "'" + id.Text + "','" + nom.Text + "','" + postnom.Text + "','" + prenom.Text + "','" + adresse.TextAlign + "','" + mail.Text + "','" + etat.Text + "','" + sexe + "','" + agence.Text + "','" + contact.Text + "','" + nationalite.Text + "'", "Agent '" + nom.Text + "' ajouter avec succes");
+                 m.EXEC_UNIVERSEL("proc_agent", "'" + id.Text + "','" + nom.Text + "','" + postnom.Text + "','" + prenom.Text + "','" + adresse.Text + "','" + mail.Text + "','" + etat.Text + "','" + sexe + "','" + agence.Text + "','" + contact.Text + "','" + nationalite.Text + "'", "Agent '" + nom.Text + "' ajouter avec succes");
                  m.chargementTableau(dataGridView1, "select * from aff_agent");
                  innit();
              }
@@ -80,7 +80,7 @@ namespace TFC_John.UserControls
             }
             else
             {
-                m.EXEC_UNIVERSEL("proc_agent", "'" + id.Text + "','" + nom.Text + "','" + postnom.Text + "','" + prenom.Text + "','" + adresse.TextAlign + "','" + mail.Text + "','" + etat.Text + "','" + sexe + "','" + agence.Text + "','" + contact.Text + "','" + nationalite.Text + "'", "Agent '" + nom.Text + "' ajouter avec succes");
+                m.EXEC_UNIVERSEL("proc_agent", "'" + id.Text + "','" + nom.Text + "','" + postnom.Text + "','" + prenom.Text + "','" + adresse.Text + "','" + mail.Text + "','" + etat.Text + "','" + sexe + "','" + agence.Text + "','" + contact.Text + "','" + nationalite.Text + "'", "Agent '" + nom.Text + "' ajouter avec succes");
                 m.chargementTableau(dataGridView1, "select * from aff_agent");
                 mod.Enabled = false;
                 add.Enabled = true;

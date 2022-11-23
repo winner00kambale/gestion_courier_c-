@@ -190,6 +190,9 @@
     <EmbeddedResource Include="sorties\Bordereau_expedition.resx">
       <DependentUpon>Bordereau_expedition.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sorties\facture.resx">
+      <DependentUpon>facture.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sorties\Liste_cleints.resx">
       <DependentUpon>Liste_cleints.cs</DependentUpon>
     </EmbeddedResource>

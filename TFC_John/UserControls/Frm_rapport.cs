@@ -43,5 +43,15 @@ namespace TFC_John.UserControls
                 printTool.ShowPreviewDialog();
             }
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            sorties.rapport_payement p = new sorties.rapport_payement();
+            p.DataSource = m.get_Rapport("rapport_recette", "'" + debut.Value.ToString("yyyy-MM-dd") + "','" + fin.Value.ToString("yyyy-MM-dd") + "' ");
+            using (ReportPrintTool printTool = new ReportPrintTool(p))
+            {
+                printTool.ShowPreviewDialog();
+            }
+        }
     }
 }

@@ -91,6 +91,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(398, 45);
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "Imprimer";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // groupBox4
             // 

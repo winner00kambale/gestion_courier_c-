@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -55,10 +55,12 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.print = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -349,13 +351,14 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.print);
             this.groupBox4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(547, 295);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(255, 83);
+            this.groupBox4.Size = new System.Drawing.Size(185, 83);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Actions";
+            this.groupBox4.Text = "Facture de payement";
             // 
             // groupBox5
             // 
@@ -375,19 +378,20 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(712, 255);
             this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(5, 23);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(366, 295);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -401,6 +405,23 @@
             this.groupControl1.Size = new System.Drawing.Size(376, 325);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Statistique de payement";
+            // 
+            // print
+            // 
+            this.print.CheckedState.Parent = this.print;
+            this.print.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.print.CustomImages.Parent = this.print;
+            this.print.FillColor = System.Drawing.Color.Gray;
+            this.print.Font = new System.Drawing.Font("Century", 12F);
+            this.print.ForeColor = System.Drawing.Color.White;
+            this.print.HoverState.Parent = this.print;
+            this.print.Location = new System.Drawing.Point(6, 26);
+            this.print.Name = "print";
+            this.print.ShadowDecoration.Parent = this.print;
+            this.print.Size = new System.Drawing.Size(173, 45);
+            this.print.TabIndex = 6;
+            this.print.Text = "Imprimmer";
+            this.print.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // Frm_Payement
             // 
@@ -421,6 +442,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -456,6 +478,7 @@
         private System.Windows.Forms.Label id;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
+        private Guna.UI2.WinForms.Guna2Button print;
 
     }
 }
