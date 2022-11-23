@@ -128,6 +128,12 @@
     <Compile Include="sorties\rapport_journalier_expedition.Designer.cs">
       <DependentUpon>rapport_journalier_expedition.cs</DependentUpon>
     </Compile>
+    <Compile Include="sorties\rapport_payement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sorties\rapport_payement.Designer.cs">
+      <DependentUpon>rapport_payement.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Frm_agent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sorties\rapport_journalier_expedition.resx">
       <DependentUpon>rapport_journalier_expedition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sorties\rapport_payement.resx">
+      <DependentUpon>rapport_payement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Frm_agent.resx">
       <DependentUpon>Frm_agent.cs</DependentUpon>

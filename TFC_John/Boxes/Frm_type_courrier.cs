@@ -34,7 +34,7 @@ namespace TFC_John.Boxes
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ce Type Existe deja");
+                    MessageBox.Show("Ce Type Existe deja" +ex.Message);
                 }
             }
             
@@ -56,7 +56,7 @@ namespace TFC_John.Boxes
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ce Type Existe deja");
+                    MessageBox.Show("Ce Type Existe deja" + ex.Message);
                 }
             }
         }

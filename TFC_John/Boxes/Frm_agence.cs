@@ -35,7 +35,7 @@ namespace TFC_John.Boxes
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("l'agence " + designation.Text + " Existe deja ");
+                    MessageBox.Show("l'agence " + designation.Text + " Existe deja " +ex.Message);
                 }
             }
            
@@ -78,7 +78,7 @@ namespace TFC_John.Boxes
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("l'agence " + designation.Text + " Existe deja ");
+                    MessageBox.Show("l'agence " + designation.Text + " Existe deja " + ex.Message);
                 }
             }
         }
