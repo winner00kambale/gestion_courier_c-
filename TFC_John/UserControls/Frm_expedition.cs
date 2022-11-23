@@ -160,7 +160,7 @@ namespace TFC_John.UserControls
             }
             else
             {
-                sorties.Liste_cleints c = new sorties.Liste_cleints();
+                sorties.Bordereau_expedition c = new sorties.Bordereau_expedition();
                 c.DataSource = m.get_Report_Z("*", " bordereau", " where id =" + id2.Text + "");
                 using (ReportPrintTool printTool = new ReportPrintTool(c))
                 {
