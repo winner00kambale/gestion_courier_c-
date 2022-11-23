@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraReports.UI;
 
 namespace TFC_John.UserControls
 {
@@ -20,6 +21,7 @@ namespace TFC_John.UserControls
             mod.Enabled = false;
             ajout.Enabled = false;
             modifier.Enabled = false;
+            print.Enabled = false;
             
         }
 
@@ -147,6 +149,26 @@ namespace TFC_John.UserControls
             agent.Text = guna2DataGridView1.CurrentRow.Cells[12].Value.ToString();
             ajout.Enabled = false;
             modifier.Enabled = true;
+            print.Enabled = true;
+        }
+
+        private void print_Click(object sender, EventArgs e)
+        {
+            if (id2.Text.Equals(""))
+            {
+                MessageBox.Show("veillez d'abord selectionner");
+            }
+            else
+            {
+                sorties.Liste_cleints c = new sorties.Liste_cleints();
+                c.DataSource = m.get_Report_Z("*", " bordereau", " where id =" + id2.Text + "");
+                using (ReportPrintTool printTool = new ReportPrintTool(c))
+                {
+                    printTool.ShowPreviewDialog();
+                }
+                print.Enabled = false;
+            }
+            
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -45,6 +46,7 @@
             this.paramsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilisateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeClientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -53,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.button5);
@@ -64,6 +67,22 @@
             this.panel1.Size = new System.Drawing.Size(206, 707);
             this.panel1.TabIndex = 0;
             // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = global::TFC_John.Properties.Resources.icons8_home_address_32;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(0, 220);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(206, 49);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "DashBord";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // button4
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -71,13 +90,13 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::TFC_John.Properties.Resources.icons8_home_address_32;
+            this.button4.Image = global::TFC_John.Properties.Resources.icons8_send_email_32;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 220);
+            this.button4.Location = new System.Drawing.Point(1, 495);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(206, 49);
+            this.button4.Size = new System.Drawing.Size(205, 49);
             this.button4.TabIndex = 7;
-            this.button4.Text = "DashBord";
+            this.button4.Text = "Rapport";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -219,6 +238,8 @@
             // 
             // fichierToolStripMenuItem
             // 
+            this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listeClientsToolStripMenuItem});
             this.fichierToolStripMenuItem.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fichierToolStripMenuItem.Image = global::TFC_John.Properties.Resources.icons8_file_submodule_32;
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
@@ -249,6 +270,13 @@
             this.utilisateursToolStripMenuItem.Name = "utilisateursToolStripMenuItem";
             this.utilisateursToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
             this.utilisateursToolStripMenuItem.Text = "Utilisateurs";
+            // 
+            // listeClientsToolStripMenuItem
+            // 
+            this.listeClientsToolStripMenuItem.Name = "listeClientsToolStripMenuItem";
+            this.listeClientsToolStripMenuItem.Size = new System.Drawing.Size(172, 24);
+            this.listeClientsToolStripMenuItem.Text = "Liste Clients";
+            this.listeClientsToolStripMenuItem.Click += new System.EventHandler(this.listeClientsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -294,6 +322,8 @@
         private System.Windows.Forms.ToolStripMenuItem moyenTransportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem utilisateursToolStripMenuItem;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ToolStripMenuItem listeClientsToolStripMenuItem;
     }
 }
 

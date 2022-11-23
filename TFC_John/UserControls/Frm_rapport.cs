@@ -28,5 +28,20 @@ namespace TFC_John.UserControls
                 printTool.ShowPreviewDialog();
             }
         }
+
+        private void groupBox8_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            sorties.Liste_cleints c = new sorties.Liste_cleints();
+            c.DataSource = m.get_Report_Z("*", " show_cli", "");
+            using (ReportPrintTool printTool = new ReportPrintTool(c))
+            {
+                printTool.ShowPreviewDialog();
+            }
+        }
     }
 }

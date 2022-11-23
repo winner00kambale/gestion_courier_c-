@@ -75,6 +75,7 @@
             this.nom = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.print = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -246,6 +247,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.print);
             this.groupBox3.Controls.Add(this.modifier);
             this.groupBox3.Controls.Add(this.ajout);
             this.groupBox3.Controls.Add(this.guna2DataGridView1);
@@ -626,7 +628,7 @@
             this.conditionnement.PlaceholderText = "";
             this.conditionnement.SelectedText = "";
             this.conditionnement.ShadowDecoration.Parent = this.conditionnement;
-            this.conditionnement.Size = new System.Drawing.Size(320, 36);
+            this.conditionnement.Size = new System.Drawing.Size(319, 36);
             this.conditionnement.TabIndex = 14;
             // 
             // label7
@@ -786,6 +788,21 @@
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // print
+            // 
+            this.print.CheckedState.Parent = this.print;
+            this.print.CustomImages.Parent = this.print;
+            this.print.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print.ForeColor = System.Drawing.Color.White;
+            this.print.HoverState.Parent = this.print;
+            this.print.Location = new System.Drawing.Point(6, 413);
+            this.print.Name = "print";
+            this.print.ShadowDecoration.Parent = this.print;
+            this.print.Size = new System.Drawing.Size(153, 45);
+            this.print.TabIndex = 6;
+            this.print.Text = "Bordereau";
+            this.print.Click += new System.EventHandler(this.print_Click);
+            // 
             // Frm_expedition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -860,5 +877,6 @@
         private System.Windows.Forms.Label id2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button modifier;
+        private Guna.UI2.WinForms.Guna2Button print;
     }
 }

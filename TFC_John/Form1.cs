@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraReports.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace TFC_John
 {
     public partial class Form1 : Form
     {
+        Classes.Myconnexion m = new Classes.Myconnexion();
         Classes.Appel a = new Classes.Appel();
         public Form1()
         {
@@ -66,6 +68,16 @@ namespace TFC_John
         private void button4_Click(object sender, EventArgs e)
         {
             a.APPEL_PANEL(new UserControls.Frm_rapport(), principal);
+        }
+
+        private void listeClientsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sorties.Liste_cleints c = new sorties.Liste_cleints();
+            c.DataSource = m.get_Report_Z("*", " show_cli", "");
+            using (ReportPrintTool printTool = new ReportPrintTool(c))
+            {
+                printTool.ShowPreviewDialog();
+            }
         }
     }
 }
